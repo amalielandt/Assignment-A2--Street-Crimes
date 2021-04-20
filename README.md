@@ -34,3 +34,8 @@ match (c:crimes)
 
 return c.crime, count(*) as occurences ORDER BY occurences DESC LIMIT 1
 ```
+
+##### For at slette alt data
+```
+MATCH(n) DETACH DELETE n
+```
