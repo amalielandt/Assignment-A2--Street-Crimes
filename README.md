@@ -1,4 +1,4 @@
-# Assignment-A2--Street-Crimes
+# Assignment A2 - Street Crimes
 
 ### Download a data set in a csv format and use (some of) the data in it to create a graph database.
 
