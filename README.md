@@ -2,9 +2,7 @@
 
 ### Download a data set in a csv format and use (some of) the data in it to create a graph database.
 
-[csv](https://github.com/amalielandt/Assignment-A2--Street-Crimes/blob/main/2021-02-dorset-street.csv) med det anvendte data
-
-- Gem csv filen i import folderen som vist på billedet
+- Gem [csv filen]((https://github.com/amalielandt/Assignment-A2--Street-Crimes/blob/main/2021-02-dorset-street.csv) med det anvendte data) i import folderen som vist på billedet
 
 <img width="901" alt="Skærmbillede 2021-04-20 kl  13 03 57" src="https://user-images.githubusercontent.com/44894156/115385949-12c7ef00-a1d9-11eb-8fce-267cef7c49e0.png">
 
@@ -19,12 +17,20 @@ MERGE (c:crimes {id: crimes.`Crime ID`, location:crimes.Location, crime:crimes.`
 
 return c
 ```
+##### Use Cypher and the Neo4j browser tools. 
+
 ### Based on your data sample, show
 
 ### - which is the location with highest number of crimes?
-### - which is the most common crime?
+```
+match (c:crimes) 
 
-Use Cypher and the Neo4j browser tools.
-Save the script in a file and upload it to Peergrade.
-Note
-This assignment does not bri
+return c.location, count(*) as occurences ORDER BY occurences DESC LIMIT 1
+```
+
+### - which is the most common crime?
+```
+match (c:crimes)
+
+return c.crime, count(*) as occurences ORDER BY occurences DESC LIMIT 1
+```
