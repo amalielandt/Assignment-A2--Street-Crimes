@@ -4,7 +4,7 @@
 
 - Gem [csv filen](https://github.com/amalielandt/Assignment-A2--Street-Crimes/blob/main/2021-02-dorset-street.csv) med det anvendte data i import folderen som vist på billedet
 
-<img width="901" alt="Skærmbillede 2021-04-20 kl  13 03 57" src="https://user-images.githubusercontent.com/44894156/115385949-12c7ef00-a1d9-11eb-8fce-267cef7c49e0.png">
+<img width="500" alt="Skærmbillede 2021-04-20 kl  13 03 57" src="https://user-images.githubusercontent.com/44894156/115385949-12c7ef00-a1d9-11eb-8fce-267cef7c49e0.png">
 
 - Kør følgende script i Neo4j Browser
 
