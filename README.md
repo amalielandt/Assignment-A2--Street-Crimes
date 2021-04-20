@@ -21,14 +21,14 @@ return c
 
 ### Based on your data sample, show
 
-### - which is the location with highest number of crimes?
+#### Which is the location with highest number of crimes?
 ```
 match (c:crimes) 
 
 return c.location, count(*) as occurences ORDER BY occurences DESC LIMIT 1
 ```
 
-### - which is the most common crime?
+#### Which is the most common crime?
 ```
 match (c:crimes)
 
